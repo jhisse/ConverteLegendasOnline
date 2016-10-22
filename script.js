@@ -1,5 +1,5 @@
 function excluiTempo(legenda) {
-    var regex = /[0-9]{1,}\n[0-9,:]{10,12} --> [0-9,:]{10,12}/gm;
+    var regex = /[0-9]+\n[0-9,:]{10,12} --> [0-9,:]{10,12}/gm;
     return legenda.replace(regex, "");
 }
 
@@ -10,7 +10,7 @@ function excluiQuebradp(legenda) {
 
 function excluiQuebra(legenda) {
     var regex = /(\n)*/g;
-    return legenda.replace(regex, " ");
+    return legenda.replace(regex, "");
 }
 
 function excluiTags(legenda) {
@@ -19,6 +19,15 @@ function excluiTags(legenda) {
 }
 
 $(function () {
+    $("#excluirquebradpcb").change(function () {
+        var ck = $("#excluirquebradpcb:checked").length;
+        if (ck) {
+            $("#excluirquebracb").attr("disabled", true);
+        } else {
+            $("#excluirquebracb").removeAttr("disable");
+        }
+    });
+
     $("#btn").click(function () {
         var legenda = $("#entrada").val();
 
@@ -41,5 +50,5 @@ $(function () {
         }
 
         $("#saida").val(legenda);
-    });
-})
+    })
+});
