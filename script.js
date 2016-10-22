@@ -10,7 +10,7 @@ function excluiQuebradp(legenda) {
 
 function excluiQuebra(legenda) {
     var regex = /(\n)*/g;
-    return legenda.replace(regex, "");
+    return legenda.replace(regex, " ");
 }
 
 function excluiTags(legenda) {
