@@ -19,15 +19,6 @@ function excluiTags(legenda) {
 }
 
 $(function () {
-    $("#excluirquebradpcb").change(function () {
-        var ck = $("#excluirquebradpcb:checked").length;
-        if (ck) {
-            $("#excluirquebracb").attr("disabled", true);
-        } else {
-            $("#excluirquebracb").removeAttr("disable");
-        }
-    });
-
     $("#btn").click(function () {
         var legenda = $("#entrada").val();
 
