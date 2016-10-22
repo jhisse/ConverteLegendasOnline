@@ -2,6 +2,7 @@ html, body {
     width: 100vw;
     height: 100vh;
     margin: 0;
+    background-color: lightgray;
 }
 
 h1 {
@@ -26,7 +27,6 @@ header {
     justify-content: center;
     width: 100%;
     height: 75%;
-    margin: auto;
 }
 
 #entrada, #saida {
@@ -37,8 +37,10 @@ header {
 }
 
 footer {
-    width: 100%;
+    width: 94%;
     height: 15%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 #btn {
