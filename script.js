@@ -19,7 +19,7 @@ function excluiTags(legenda) {
 }
 
 $(function () {
-    $("#btn").click(function () {
+    $(".btn").click(function () {
         var legenda = $("#entrada").val();
 
         var verificacao1 = $("#excluirnumcb:checked").length;
