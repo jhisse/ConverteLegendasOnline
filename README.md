@@ -1,3 +1,3 @@
 #Conversor de legendas .srt em texto
 
-[https://jhisse.github.io/ConverteLegendasOnline/]()
+https://jhisse.github.io/ConverteLegendasOnline/
