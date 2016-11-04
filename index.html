@@ -2,6 +2,9 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Legendas</title>
 
     <link rel="stylesheet" href="style.css">
@@ -24,47 +27,49 @@
 
 </head>
 <body>
-<header class="col-md-12">
-    <h1>Conversor de legendas .srt em texto</h1>
-</header>
-<div class="col-md-12">
-    <div class="col-md-8">
-        <h2>Entrada: (Copie e cole sua legenda)</h2>
-        <textarea id="entrada" class="col-md-12" placeholder="Coloque sua legenda aqui"></textarea>
-        <h2>Saída:</h2>
-        <textarea id="saida" class="col-md-12" disabled></textarea>
-    </div>
-    <form>
-        <div class=".form-check-inline lateral col-md-4">
-            <label for="excluirnumcb" id="excluirnumlb">
-                <input type="checkbox" id="excluirnumcb" checked>
-                Excluir marcas de tempo
-            </label>
-            <br>
-
-            <label for="excluirtagscb" id="excluirtagslb">
-                <input type="checkbox" id="excluirtagscb" checked>
-                Excluir tags presentes na legenda. Ex: < i >
-            </label>
-            <br>
-
-
-            <label for="excluirquebradpcb" id="excluirquebradplb">
-                <input type="checkbox" id="excluirquebradpcb" checked>
-                Excluir quebras de linha duplicadas
-            </label>
-            <br>
-
-
-            <label for="excluirquebracb" id="excluirquebralb">
-                <input type="checkbox" id="excluirquebracb" checked>
-                Excluir quebras de linha
-            </label>
-            <br>
-
-            <button type="button" class="btn btn-success">Converter</button>
+<div class="container-fluid">
+    <header>
+        <h1>Conversor de legendas .srt em texto</h1>
+    </header>
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Entrada: (Copie e cole sua legenda)</h2>
+            <textarea id="entrada" placeholder="Coloque sua legenda aqui"></textarea>
+            <h2>Saída:</h2>
+            <textarea id="saida" disabled></textarea>
         </div>
-    </form>
+        <form class="form-horizontal col-md-4">
+            <div class="lateral form-group">
+                <label for="excluirnumcb" id="excluirnumlb">
+                    <input type="checkbox" id="excluirnumcb" checked>
+                    Excluir marcas de tempo
+                </label>
+                <br>
+
+                <label for="excluirtagscb" id="excluirtagslb">
+                    <input type="checkbox" id="excluirtagscb" checked>
+                    Excluir tags presentes na legenda. Ex: < i >
+                </label>
+                <br>
+
+
+                <label for="excluirquebradpcb" id="excluirquebradplb">
+                    <input type="checkbox" id="excluirquebradpcb" checked>
+                    Excluir quebras de linha duplicadas
+                </label>
+                <br>
+
+
+                <label for="excluirquebracb" id="excluirquebralb">
+                    <input type="checkbox" id="excluirquebracb" checked>
+                    Excluir quebras de linha
+                </label>
+                <br>
+
+                <button type="button" class="btn btn-success">Converter</button>
+            </div>
+        </form>
+    </div>
 </div>
 </body>
 </html>
